@@ -1,0 +1,6 @@
+rootProject.name='Pokemon'
+include ':app'
+include ':presentation'
+include ':domain'
+include ':data'
+include ':data_remote'

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.16510416666666666" />
+        <entry key="app/src/main/res/drawable/ic_chevron_right.xml" value="0.262037037037037" />
+        <entry key="app/src/main/res/drawable/ic_launcher_background.xml" value="0.262037037037037" />
+        <entry key="app/src/main/res/drawable/ic_menu_character.xml" value="0.262037037037037" />
+        <entry key="app/src/main/res/drawable/ic_menu_episode.xml" value="0.262037037037037" />
+        <entry key="app/src/main/res/drawable/ic_menu_location.xml" value="0.262037037037037" />
+        <entry key="app/src/main/res/drawable/nav_item_color_state.xml" value="0.262037037037037" />
+        <entry key="app/src/main/res/layout/activity_main.xml" value="0.1" />
+        <entry key="app/src/main/res/layout/fragment_character.xml" value="0.1" />
+        <entry key="app/src/main/res/layout/fragment_character_detail.xml" value="0.1" />
+        <entry key="app/src/main/res/layout/fragment_pokemon_detail.xml" value="0.1" />
+        <entry key="app/src/main/res/layout/fragment_pokemon_list.xml" value="0.14895833333333333" />
+        <entry key="app/src/main/res/layout/item_personagem_list.xml" value="0.25" />
+        <entry key="app/src/main/res/layout/item_pokemon_list.xml" value="0.25" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_1_7" project-jdk-name="1.8" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+  <component name="VisualizationToolProject">
+    <option name="state">
+      <ProjectState>
+        <option name="scale" value="0.1" />
+      </ProjectState>
+    </option>
+  </component>
+</project>

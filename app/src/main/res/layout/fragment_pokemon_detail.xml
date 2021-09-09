@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <import type="android.view.View" />
+
+        <variable
+            name="pokemon"
+            type="com.matheusbrandao.pokemon.presentation.pokemon.PokemonBinding" />
+
+        <variable
+            name="viewModel"
+            type="com.matheusbrandao.pokemon.presentation.pokemon.PokemonDetailViewModel" />
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:context=".ui.fragment.PokemonDetailFragment">
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/imageView_background"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/header_image"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/imageView_avatar"
+            android:layout_width="match_parent"
+            android:layout_height="140dp"
+            android:layout_marginTop="16dp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:pokemonDetailImage="@{pokemon.urlImage}" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/textView_type"
+            style="@style/Subtitle_2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:gravity="center"
+            android:text="@{viewModel.item.type}"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/imageView_avatar"
+            tools:text="eltric" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/textView_id"
+            style="@style/Name_Character_Detail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="@{pokemon.id}"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView_type"
+            tools:text="20" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/textView_name"
+            style="@style/Specie_Character_Detail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@{pokemon.name}"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView_id"
+            tools:text="Pikachu" />
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_margin="20dp"
+            android:background="@android:color/white"
+            android:visibility="@{viewModel.dataLoading == false ? View.VISIBLE : View.GONE}"
+            app:cardCornerRadius="8dp"
+            app:cardElevation="1dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView_name">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/textView_labelWeight"
+                    style="@style/Specie_Character_Detail"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="Weight:"
+                    app:layout_constraintBottom_toTopOf="@+id/textView_height"
+                    app:layout_constraintEnd_toStartOf="@+id/textView_height"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/textView_weight"
+                    style="@style/Specie_Character_Detail"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="@{viewModel.item.weight}"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toStartOf="@+id/textView_height"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/textView_labelWeight"
+                    tools:text="10" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/textView_labelHeight"
+                    style="@style/Specie_Character_Detail"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="Height:"
+                    app:layout_constraintBottom_toTopOf="@+id/textView_height"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/textView_weight"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/textView_height"
+                    style="@style/Specie_Character_Detail"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="@{viewModel.item.height}"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/textView_weight"
+                    app:layout_constraintTop_toBottomOf="@+id/textView_labelHeight"
+                    tools:text="20" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </androidx.cardview.widget.CardView>
+
+        <ProgressBar
+            style="?android:attr/progressBarStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="@{viewModel.dataLoading == true ? View.VISIBLE : View.GONE}"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:visibility="gone" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

@@ -1,0 +1,56 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@android:color/white</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="titleTextColor">@color/titleColor</item>
+    </style>
+
+    <style name="Subtitle_1">
+        <item name="android:textSize">16dp</item>
+        <item name="android:textColor">@color/subtitle_1</item>
+        <item name="fontFamily">@font/roboto</item>
+    </style>
+
+    <style name="Name_Character_Detail">
+        <item name="android:textSize">34dp</item>
+        <item name="android:textColor">@color/subtitle_1</item>
+        <item name="fontFamily">@font/roboto</item>
+    </style>
+
+    <style name="Specie_Character_Detail">
+        <item name="android:textSize">13dp</item>
+        <item name="android:textColor">@color/overline</item>
+        <item name="fontFamily">@font/roboto</item>
+        <item name="android:textAllCaps">true</item>
+    </style>
+
+    <style name="Episode">
+        <item name="android:textSize">16dp</item>
+        <item name="android:textColor">@color/subtitle_1</item>
+        <item name="fontFamily">@font/roboto_bold</item>
+    </style>
+
+    <style name="Subtitle_2">
+        <item name="android:textSize">12dp</item>
+        <item name="android:textColor">@color/subtitle_2</item>
+        <item name="fontFamily">@font/roboto</item>
+    </style>
+
+    <style name="SecondaryText">
+        <item name="android:textSize">14dp</item>
+        <item name="android:textColor">@color/subtitle_2</item>
+        <item name="fontFamily">@font/roboto</item>
+    </style>
+
+    <style name="Overline">
+        <item name="android:textSize">10dp</item>
+        <item name="android:textColor">@color/subtitle_2</item>
+        <item name="fontFamily">@font/roboto</item>
+        <item name="android:textAllCaps">true</item>
+    </style>
+
+</resources>
