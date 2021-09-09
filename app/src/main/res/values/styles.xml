@@ -15,42 +15,23 @@
         <item name="fontFamily">@font/roboto</item>
     </style>
 
-    <style name="Name_Character_Detail">
-        <item name="android:textSize">34dp</item>
+    <style name="Name_Detail">
+        <item name="android:textSize">34sp</item>
         <item name="android:textColor">@color/subtitle_1</item>
         <item name="fontFamily">@font/roboto</item>
     </style>
 
-    <style name="Specie_Character_Detail">
+    <style name="Label_Detail">
         <item name="android:textSize">13dp</item>
         <item name="android:textColor">@color/overline</item>
         <item name="fontFamily">@font/roboto</item>
         <item name="android:textAllCaps">true</item>
     </style>
 
-    <style name="Episode">
-        <item name="android:textSize">16dp</item>
-        <item name="android:textColor">@color/subtitle_1</item>
-        <item name="fontFamily">@font/roboto_bold</item>
-    </style>
-
     <style name="Subtitle_2">
         <item name="android:textSize">12dp</item>
         <item name="android:textColor">@color/subtitle_2</item>
         <item name="fontFamily">@font/roboto</item>
-    </style>
-
-    <style name="SecondaryText">
-        <item name="android:textSize">14dp</item>
-        <item name="android:textColor">@color/subtitle_2</item>
-        <item name="fontFamily">@font/roboto</item>
-    </style>
-
-    <style name="Overline">
-        <item name="android:textSize">10dp</item>
-        <item name="android:textColor">@color/subtitle_2</item>
-        <item name="fontFamily">@font/roboto</item>
-        <item name="android:textAllCaps">true</item>
     </style>
 
 </resources>

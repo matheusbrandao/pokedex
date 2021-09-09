@@ -5,4 +5,6 @@
     <string name="hello_blank_fragment">Hello blank fragment</string>
 
     <string name="label_title_main">Pokemons</string>
+    <string name="label_weight">Weight:</string>
+    <string name="label_height">Height:</string>
 </resources>

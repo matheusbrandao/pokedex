@@ -13,7 +13,7 @@ class FetchPokemonsListUseCase(
 
     override fun buildUseCaseObservable(params: Params?): Observable<List<Pokemon>> {
         checkNotNull(params)
-        return repository.fetchPokemonsList(params.offset)
+        return repository.fetchPokemonList(params.offset)
     }
 
     data class Params(val offset: Int)

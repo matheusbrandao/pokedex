@@ -9,8 +9,8 @@ class ApiRepositoryImpl(
     private val remoteDataSource: ApiRemoteDataSource
 ) : ApiRepository {
 
-    override fun fetchPokemonsList(offset: Int): Observable<List<Pokemon>> {
-        return remoteDataSource.fetchPokemonsList(offset)
+    override fun fetchPokemonList(offset: Int): Observable<List<Pokemon>> {
+        return remoteDataSource.fetchPokemonList(offset)
     }
 
     override fun fetchPokemonDetails(id: String): Observable<PokemonDetails> {

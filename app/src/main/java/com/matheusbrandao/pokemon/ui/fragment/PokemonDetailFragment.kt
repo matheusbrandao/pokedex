@@ -56,7 +56,9 @@ class PokemonDetailFragment : Fragment() {
     private fun setupActionBar() {
         activity?.let {
             it.title = pokemonData?.name
+            it.actionBar?.setDisplayHomeAsUpEnabled(true)
         }
+        setHasOptionsMenu(true)
     }
 
     private fun setupObservables() {

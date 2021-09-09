@@ -14,10 +14,6 @@ dependencies {
     api "com.squareup.okhttp3:okhttp:$okHttpVersion"
     api "com.squareup.okhttp3:logging-interceptor:$okHttpVersion"
     api "com.google.code.gson:gson:$gsonVersion"
-
-    testImplementation "com.nhaarman:mockito-kotlin:$mockitoKotlinVersion"
-    testImplementation "org.assertj:assertj-core:$assertjVersion"
-    testImplementation "junit:junit:$junitVersion"
 }
 
 sourceCompatibility = "7"

@@ -51,11 +51,11 @@
             app:layout_constraintLeft_toLeftOf="parent"
             app:layout_constraintRight_toRightOf="parent"
             app:layout_constraintTop_toBottomOf="@id/imageView_avatar"
-            tools:text="eltric" />
+            tools:text="eletric" />
 
         <androidx.appcompat.widget.AppCompatTextView
             android:id="@+id/textView_id"
-            style="@style/Name_Character_Detail"
+            style="@style/Name_Detail"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:gravity="center"
@@ -67,7 +67,7 @@
 
         <androidx.appcompat.widget.AppCompatTextView
             android:id="@+id/textView_name"
-            style="@style/Specie_Character_Detail"
+            style="@style/Label_Detail"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@{pokemon.name}"
@@ -93,11 +93,11 @@
 
                 <androidx.appcompat.widget.AppCompatTextView
                     android:id="@+id/textView_labelWeight"
-                    style="@style/Specie_Character_Detail"
+                    style="@style/Label_Detail"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:gravity="center"
-                    android:text="Weight:"
+                    android:text="@string/label_weight"
                     app:layout_constraintBottom_toTopOf="@+id/textView_height"
                     app:layout_constraintEnd_toStartOf="@+id/textView_height"
                     app:layout_constraintStart_toStartOf="parent"
@@ -105,7 +105,7 @@
 
                 <androidx.appcompat.widget.AppCompatTextView
                     android:id="@+id/textView_weight"
-                    style="@style/Specie_Character_Detail"
+                    style="@style/Label_Detail"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:gravity="center"
@@ -118,11 +118,11 @@
 
                 <androidx.appcompat.widget.AppCompatTextView
                     android:id="@+id/textView_labelHeight"
-                    style="@style/Specie_Character_Detail"
+                    style="@style/Label_Detail"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:gravity="center"
-                    android:text="Height:"
+                    android:text="@string/label_height"
                     app:layout_constraintBottom_toTopOf="@+id/textView_height"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toEndOf="@+id/textView_weight"
@@ -130,7 +130,7 @@
 
                 <androidx.appcompat.widget.AppCompatTextView
                     android:id="@+id/textView_height"
-                    style="@style/Specie_Character_Detail"
+                    style="@style/Label_Detail"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:gravity="center"

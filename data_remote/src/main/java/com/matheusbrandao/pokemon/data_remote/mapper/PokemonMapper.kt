@@ -5,6 +5,10 @@ import com.matheusbrandao.pokemon.domain.Pokemon
 
 object PokemonMapper : Mapper<PokemonDataEntity, Pokemon> {
 
+    private const val URL_GET_IMAGE =
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/"
+    private const val TYPE_IMAGE = ".png"
+
     override fun fromRemote(remote: PokemonDataEntity): Pokemon {
         val pokemonId = getPokemonId(remote.url)
         return Pokemon(
@@ -26,7 +30,6 @@ object PokemonMapper : Mapper<PokemonDataEntity, Pokemon> {
             url.takeLastWhile { it.isDigit() }
         }
 
-    private fun getUrlImage(id: String): String {
-        return "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/${id}.png"
-    }
+    private fun getUrlImage(id: String) =
+        "${URL_GET_IMAGE}${id}${TYPE_IMAGE}"
 }

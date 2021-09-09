@@ -11,7 +11,7 @@ import io.reactivex.Observable
 class ApiRemoteDataSourceImpl(private val service: ApiService) :
     ApiRemoteDataSource {
 
-    override fun fetchPokemonsList(offset: Int): Observable<List<Pokemon>> {
+    override fun fetchPokemonList(offset: Int): Observable<List<Pokemon>> {
         return service.fetchPokemonList(ITEMS_PER_PAGE, offset).map {
             it.results.map(
                 PokemonMapper::fromRemote
